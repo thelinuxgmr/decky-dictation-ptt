@@ -4,9 +4,13 @@
 
 By **LinuxGmr and Asuka**.
 
-Speak, and the text is typed into whatever app has focus: game chat, store
-search, browser fields, anything. Recognition runs 100% on-device with the
-Vosk speech recognizer — no account, no cloud, no audio ever leaves your Deck.
+It's voice-to-text for any active text box: click into the box, hold the two
+paddles together for two seconds, start speaking, and your voice is turned
+into text and typed in for you. Perfect for games like World of Warcraft, or
+any chat room, where you'd rather keep playing than stop and use a keyboard.
+It works in whatever app has focus: game chat, store search, browser fields,
+anything. Recognition runs 100% on-device with the Vosk speech recognizer —
+no account, no cloud, no audio ever leaves your Deck.
 
 *Not to be confused with the older, unmaintained "Decky Dictation" plugin:
 this is a separate plugin, written independently. It works in any focused

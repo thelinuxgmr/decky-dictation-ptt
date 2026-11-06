@@ -5,7 +5,7 @@
   "api_version": 1,
   "publish": {
     "tags": ["dictation", "voice", "accessibility", "microphone"],
-    "description": "Offline voice dictation for Game Mode. Toggle it in the Quick Access Menu, or hold both back paddles (L4 + R4) together as push-to-talk — wait at least two seconds after pressing, then speak, and the text is typed into the focused app. Fully offline (Vosk speech recognition).",
+    "description": "Voice-to-text dictation for Game Mode. Click into any text box, hold both back paddles (L4 + R4) together for two seconds, then speak — your voice is turned into text and typed in for you. Perfect for game chat like World of Warcraft, or any chat room where you'd rather not stop to use a keyboard. A Quick Access Menu toggle is included too. Fully offline (Vosk speech recognition) — no cloud, no account.",
     "image": "https://opengraph.githubassets.com/1/TheLinuxGmr/decky-dictation-ptt"
   }
 }
