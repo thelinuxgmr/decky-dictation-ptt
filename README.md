@@ -17,7 +17,7 @@ nerd-dictation dependency — the backend is Python standard library only.*
 ## How to use it
 
 **Push-to-talk (the best way):** click into the text box you want to type in,
-then **hold both back paddles — L4 and R4 — together, wait one or two seconds,
+then **hold both back paddles — L4 and R4 — together, wait at least two seconds,
 and then start speaking.** Waiting that beat before you talk is what makes it
 capture everything. Keep holding while you speak; let go of the paddles to
 stop, and your words are typed out.

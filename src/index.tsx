@@ -18,7 +18,7 @@ function statusText(status: DictationStatus | null, running: boolean): string {
     case "extracting":
       return "First-run setup: unpacking the speech model…";
     case "ready":
-      return "Ready. Toggle on, or hold L4 + R4 together, wait a second, then speak.";
+      return "Ready. Toggle on, or hold L4 + R4 together, wait at least two seconds, then speak.";
     case "error":
       return `Setup problem: ${status.detail || "check the plugin log."}`;
     default:
@@ -73,7 +73,7 @@ function Content() {
       <PanelSectionRow>
         <div style={{ fontSize: "12px", lineHeight: "1.45" }}>
           Push-to-talk: focus the text box you want to type in, hold <b>L4 + R4</b>{" "}
-          together, wait one or two seconds, then start speaking — that way it
+          together, wait at least two seconds, then start speaking — that way it
           captures everything. Let go of the paddles to stop.
         </div>
       </PanelSectionRow>
