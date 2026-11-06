@@ -1,11 +1,11 @@
 {
-  "name": "Decky Dictation",
+  "name": "Decky Dictation PTT",
   "author": "LinuxGmr and Asuka",
   "flags": ["_root"],
   "api_version": 1,
   "publish": {
     "tags": ["dictation", "voice", "accessibility", "microphone"],
     "description": "Offline voice dictation for Game Mode. Toggle it in the Quick Access Menu, or hold both back paddles (L4 + R4) together as push-to-talk — wait a second or two after pressing, then speak, and the text is typed into the focused app. Fully offline (Vosk speech recognition).",
-    "image": "https://opengraph.githubassets.com/1/TheLinuxGmr/decky-dictation"
+    "image": "https://opengraph.githubassets.com/1/TheLinuxGmr/decky-dictation-ptt"
   }
 }

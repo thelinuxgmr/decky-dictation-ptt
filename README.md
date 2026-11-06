@@ -1,4 +1,4 @@
-# Decky Dictation
+# Decky Dictation PTT
 
 **Offline voice dictation for Steam Deck Game Mode — with push-to-talk on the back paddles.**
 
@@ -8,6 +8,12 @@ Speak, and the text is typed into whatever app has focus: game chat, store
 search, browser fields, anything. Recognition runs 100% on-device with the
 Vosk speech recognizer — no account, no cloud, no audio ever leaves your Deck.
 
+*Not to be confused with the older, unmaintained "Decky Dictation" plugin:
+this is a separate plugin, written independently. It works in any focused
+field (including the home UI, store search, and Steam chat, where the older
+one does not), adds push-to-talk on the back paddles, and needs no
+nerd-dictation dependency — the backend is Python standard library only.*
+
 ## How to use it
 
 **Push-to-talk (the best way):** click into the text box you want to type in,
@@ -16,7 +22,7 @@ and then start speaking.** Waiting that beat before you talk is what makes it
 capture everything. Keep holding while you speak; let go of the paddles to
 stop, and your words are typed out.
 
-**Toggle mode:** open the Quick Access Menu → Decky → Decky Dictation and flip
+**Toggle mode:** open the Quick Access Menu → Decky → Decky Dictation PTT and flip
 the Dictation switch on, speak, then flip it off when you're done.
 
 ### A note about the back paddles

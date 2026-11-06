@@ -82,7 +82,7 @@ function Content() {
 }
 
 export default definePlugin(() => ({
-  name: "Decky Dictation",
+  name: "Decky Dictation PTT",
   content: <Content />,
   icon: <FaMicrophone />,
 }));

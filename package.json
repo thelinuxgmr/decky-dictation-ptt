@@ -1,5 +1,5 @@
 {
-  "name": "decky-dictation",
+  "name": "decky-dictation-ptt",
   "version": "1.0.0",
   "description": "Offline push-to-talk voice dictation for Steam Deck Game Mode (Vosk + ydotool).",
   "type": "module",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheLinuxGmr/decky-dictation.git"
+    "url": "git+https://github.com/TheLinuxGmr/decky-dictation-ptt.git"
   },
   "keywords": ["decky", "plugin", "plugin-template", "steam-deck", "deck", "dictation", "voice", "push-to-talk"],
   "author": "LinuxGmr and Asuka",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/TheLinuxGmr/decky-dictation/issues"
+    "url": "https://github.com/TheLinuxGmr/decky-dictation-ptt/issues"
   },
-  "homepage": "https://github.com/TheLinuxGmr/decky-dictation#readme",
+  "homepage": "https://github.com/TheLinuxGmr/decky-dictation-ptt#readme",
   "devDependencies": {
     "@decky/rollup": "^1.0.2",
     "@decky/ui": "^4.11.0",

@@ -1,7 +1,7 @@
 """
-Decky Dictation backend (store build).
+Decky Dictation PTT backend (store build).
 
-Self-contained edition of Decky Dictation:
+Self-contained edition of Decky Dictation PTT:
 
 - On first use it downloads the Vosk runtime library and the small en-US
   speech model into the plugin's runtime directory (SHA-256 pinned below).
@@ -89,7 +89,7 @@ def _download(url: str, dest: str, sha256: str) -> None:
     if os.path.exists(dest) and _sha256_of(dest) == sha256:
         return
     tmp = dest + ".part"
-    req = urllib.request.Request(url, headers={"User-Agent": "decky-dictation/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "decky-dictation-ptt/1.0"})
     with urllib.request.urlopen(req, timeout=120) as resp, open(tmp, "wb") as out:
         shutil.copyfileobj(resp, out, 1 << 20)
     digest = _sha256_of(tmp)
@@ -115,7 +115,7 @@ class Plugin:
 
     async def _main(self):
         self._loop = asyncio.get_event_loop()
-        logger.info("Decky Dictation backend started (store build)")
+        logger.info("Decky Dictation PTT backend started (store build)")
         if os.environ.get("DECKY_DICTATION_DISABLE_PTT") != "1":
             self._ptt_thread = threading.Thread(
                 target=self._ptt_thread_main, name="ptt-watcher", daemon=True
@@ -126,7 +126,7 @@ class Plugin:
         self._stopping = True
         await self._stop_engine()
         self._stop_daemon()
-        logger.info("Decky Dictation backend unloaded")
+        logger.info("Decky Dictation PTT backend unloaded")
 
     # ----------------------------------------------------------------- setup
 
@@ -168,12 +168,12 @@ class Plugin:
                     None, self._setup_blocking
                 )
                 self._setup_state = "ready"
-                logger.info("Decky Dictation setup complete")
+                logger.info("Decky Dictation PTT setup complete")
                 return True
             except Exception as exc:
                 self._setup_state = "error"
                 self._setup_detail = str(exc)
-                logger.exception("Decky Dictation setup failed")
+                logger.exception("Decky Dictation PTT setup failed")
                 return False
 
     # ---------------------------------------------------------------- daemon
@@ -287,12 +287,12 @@ class Plugin:
     # ------------------------------------------------------- frontend methods
 
     async def start_dictation(self) -> bool:
-        logger.info("Decky Dictation: start requested (toggle)")
+        logger.info("Decky Dictation PTT: start requested (toggle)")
         await self._start_engine("toggle")
         return self._engine_running()
 
     async def stop_dictation(self) -> bool:
-        logger.info("Decky Dictation: stop requested (toggle)")
+        logger.info("Decky Dictation PTT: stop requested (toggle)")
         await self._stop_engine()
         return self._engine_running()
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Decky Dictation recognition engine (store build).
+Decky Dictation PTT recognition engine (store build).
 
 Runs as the desktop session user. Loads libvosk via ctypes (stdlib only, no
 third-party Python packages), captures microphone audio from the first
